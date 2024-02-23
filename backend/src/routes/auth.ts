@@ -3,6 +3,7 @@ import { check, validationResult } from "express-validator"
 import User from "../models/user";
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
+import verifyToken from "../middleware/auth";
 
 const router = express.Router()
 
@@ -48,4 +49,11 @@ router.get("/validate-token", verifyToken, (req: Request, res: Response) => { //
     res.status(200).send({userId: req.userId})
 })
 
+// sign out
+router.post("/logout", (req: Request, res: Response) => {
+    res.cookie("auth_token", "", {
+        expires: new Date(0)
+    })
+    res.send()
+})
 export default router
