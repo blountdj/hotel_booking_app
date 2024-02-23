@@ -1,10 +1,12 @@
 -- BACKEND SETUP --
 DEPENDENCIES
 npm i express cors dotenv mongodb mongoose
+npm i bcrypt jsonwebtoken
+npm i express-validator
 
 DEV DEPENDENCIES
 npm i @types/cors @types/express @types/node ts-node typescript nodemon --save-dev
-
+npm i @types/bcrypt @types/jsonwebtoken --save-dev
 
 -- FRONTEND SETUP --
 Go to route directory and run:
@@ -16,5 +18,7 @@ variant = TypeScript + SWC
 DEPENDENCIES
 npm i -D tailwindcss postcss autoprefixer
 npm i react-router-dom
+npm i react-hook-form
+npm i react-query
 
 npx tailwindcss init -p
