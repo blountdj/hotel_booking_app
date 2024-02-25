@@ -5,6 +5,7 @@ import mongoose from 'mongoose'
 import userRoutes from './routes/users'
 import authRoutes from './routes/auth'
 import cookieParser from "cookie-parser"
+import path from 'path';
 
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string)
 
@@ -16,6 +17,9 @@ app.use(cors({ // Define who can access the server
     origin: process.env.FRONTEND_URL, // only accept requests from this URL
     credentials: true // The URL must include the credentials or a cookie in the request
 }))
+
+// Use frontend distribution
+app.use(express.static(path.join(__dirname, "../../frontend/dist")))
 
 app.use("/api/auth", authRoutes)
 app.use("/api/users", userRoutes)

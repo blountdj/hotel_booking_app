@@ -8,7 +8,7 @@ type ToastMessage = {
     type: "SUCCESS" | "ERROR"; 
 }
 
-type AppContext = {
+export type AppContext = {
     showToast: (toastMessage: ToastMessage) => void
     isLoggedIn: boolean
 }

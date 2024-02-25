@@ -5,6 +5,9 @@ npm i bcrypt jsonwebtoken
 npm i express-validator
 npm i cookie-parser
 
+Create tsconfig.json = npx tsc --init
+
+
 DEV DEPENDENCIES
 npm i @types/cors @types/express @types/node ts-node typescript nodemon --save-dev
 npm i @types/bcrypt @types/jsonwebtoken --save-dev
