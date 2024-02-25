@@ -24,3 +24,12 @@ npm i react-hook-form
 npm i react-query
 
 npx tailwindcss init -p
+
+
+TESTING BACKEND
+npm i cross-env
+
+
+e2e-tests folder
+npm init playwright@latest
+add playwright extension - Playwright Test for VSCode
