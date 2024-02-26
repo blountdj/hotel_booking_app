@@ -30,6 +30,7 @@ npm i -D tailwindcss postcss autoprefixer
 npm i react-router-dom
 npm i react-hook-form
 npm i react-query
+npm i react-icons
 
 npx tailwindcss init -p
 
@@ -40,6 +41,8 @@ npm i cross-env
 
 e2e-tests folder
 npm init playwright@latest
+npm i typescript --save-dev
+npx tsc --init
 add playwright extension - Playwright Test for VSCode
 
 HOSTING
