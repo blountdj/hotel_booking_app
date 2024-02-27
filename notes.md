@@ -17,6 +17,7 @@ npm i @types/cors @types/express @types/node ts-node typescript nodemon --save-d
 npm i @types/bcrypt @types/jsonwebtoken --save-dev
 npm i --save-dev @types/cookie-parser
 npm i --save-dev @types/multer
+npm i --save-dev @types/react-datepicker
 
 -- FRONTEND SETUP --
 Go to route directory and run:
@@ -31,6 +32,7 @@ npm i react-router-dom
 npm i react-hook-form
 npm i react-query
 npm i react-icons
+npm i react-datepicker
 
 npx tailwindcss init -p
 
