@@ -14,7 +14,7 @@ const Detail = () => {
     )
 
     if (!hotel) {
-        return <></>
+        return <>No hotel (details)</>
     }
 
     return (
